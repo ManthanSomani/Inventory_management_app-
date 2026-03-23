@@ -6,7 +6,7 @@ from bson.objectid import ObjectId
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 
-client = MongoClient('mongodb+srv://zenon86:@Manthan.somani86@cluster0.byel5it.mongodb.net/?appName=Cluster0')
+client = MongoClient('mongodb+srv://zenon86:%40Manthan.somani86@cluster0.byel5it.mongodb.net/?appName=Cluster0')
 db = client['inventory_db']
 collection = db['items']
 
